@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /admin/
+
+
+Sitemap: https://dsp4-cdp-s23-g4.fr/sitemap.xml
