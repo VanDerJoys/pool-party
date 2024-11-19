@@ -10963,6 +10963,7 @@ border :0px;
   max-width: 800px; 
   padding: 20px; 
   text-align: justify;
+  text-decoration-color: #000;
   
   } 
   
@@ -10970,3 +10971,22 @@ border :0px;
   text-align: justify; 
   }
   
+  .page img {
+    max-width: 300px; /* Limite la largeur de l'image à 300px */
+   
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Ajoute une ombre */
+    margin-bottom: 20px;
+}
+
+.page button {
+  display: block;
+  margin: 20px auto; /* Marge supérieure et centré horizontalement */
+  padding: 15px 30px;
+  background-color: #1A9EDA; /* Couleur de fond verte */
+  color: white;
+  border: none;
+  border-color: #2D2D7F;
+  cursor: pointer;
+  text-align: center;
+}
+
