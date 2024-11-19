@@ -10945,3 +10945,28 @@ border :0px;
   flex: 1; }
 
 
+/*
+   CGV et CGU
+*/
+
+.case { 
+  
+  margin: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  } 
+  
+  
+  .page { 
+  max-width: 800px; 
+  padding: 20px; 
+  text-align: justify;
+  
+  } 
+  
+  .page p { 
+  text-align: justify; 
+  }
+  
