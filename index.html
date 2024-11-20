@@ -20,9 +20,12 @@
     <!-- Favicon -->
     <link href="img/favicon.png" rel="icon">
 
+    
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -33,11 +36,57 @@
 
     <!-- Feuille de style Bootstrap personnalisée -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- Google tag (gtag.js) -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6NY44REC8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W6NY44REC8');
+    
+    </script>
+
+    <!-- Fin Google tag (gtag.js) --> 
+
+
+    <!-- Google ADS-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16775967759"> </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-16775967759');
+    </script>
+    
+    <!-- Fin Google ADS --> 
+
 </head>
 
-<body>
+<body> 
 
-    <!-- Header -->
+    <!-- Bandeau des cookies -->
+
+<div id="cookie-banner" class="cookie-banner">
+<p> Nous utilisons des cookies pour améliorer votre expérience. Vous acceptez nos conditions d'utilisation. </p>
+
+<div class="container-b">
+    <div class="element-b"> <button id="accept-cookie"> Accepter </button> </div>
+    <div class="element-b"> <button id="reject-cookie"> Refuser </button> </div>
+</div>
+
+    <a href = "/politiques-rgpd"> En savoir plus </a>
+</div>
+
+    <script src="script.js">  </script>
+
+    <!-- Fin du Bandeau des cookies -->
+
+
 
     <!-- barre supérieure Démarrage -->
 
@@ -45,7 +94,7 @@
         <div class="row bg-secondary py-1 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="d-inline-flex align-items-center h-100">
-                    <a class="text-body mr-3" href=""> A propos de nous </a>
+                    <a class="text-body mr-3" href="rejoindre.html"> Rejoignez-nous </a>
                     <a class="text-body mr-3" href="contact.html"> Contact </a>
                 </div>
             </div>
@@ -185,7 +234,7 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link active"> Acceuil </a>
-                            <a href="#" class="nav-item nav-link"> Actualités </a>
+                            <a href="#" class="nav-item nav-link"> A propos de nous </a>
                             <a href="blog.html" class="nav-item nav-link"> Blog </a>
 
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -228,8 +277,8 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-                                        Pisicnes exterieur </h1>
+                                    <h2 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
+                                        Pisicnes exterieur </h2>
                                     <p class="mx-md-5 px-5 animate__animated animate__bounceIn"> Plongez dans l'été !
                                         Louez une piscine privée pour vous rafraîchir et vous détendre dans votre jardin
                                         ou sur une terrasse ensoleillée. </p>
@@ -243,8 +292,8 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-                                        Pisicnes interieure </h1>
+                                    <h2 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
+                                        Pisicnes interieure </h2>
                                     <p class="mx-md-5 px-5 animate__animated animate__bounceIn"> Plongez dans le luxe
                                         d'une piscine intérieure, quel que soit le temps. Réservez dès maintenant et
                                         profitez d'un moment de détente unique. </p>
@@ -258,8 +307,8 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown"> Jacuzzi
-                                    </h1>
+                                    <h2 class="display-4 text-white mb-3 animate__animated animate__fadeInDown"> Jacuzzi
+                                    </h2>
                                     <p class="mx-md-5 px-5 animate__animated animate__bounceIn"> Réservez un jacuzzi
                                         privatif et offrez-vous un moment de pure détente. Bullage, chromathérapie...
                                         Tous les ingrédients sont réunis pour vous faire passer un moment inoubliable.
@@ -300,19 +349,19 @@
         <div class="row px-xl-5 pb-3">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                    <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                    <h2 class="fa fa-check text-primary m-0 mr-3"></h3>
                     <h5 class="font-weight-semi-bold m-0"> Louez </h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                    <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                    <h2 class="fa fa-shipping-fast text-primary m-0 mr-2"></h2>
                     <h5 class="font-weight-semi-bold m-0"> Profitez </h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                    <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                    <h2 class="fas fa-exchange-alt text-primary m-0 mr-3"></h2>
                     <h5 class="font-weight-semi-bold m-0"> Partagez </h5>
                 </div>
             </div>
@@ -727,14 +776,16 @@
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4"> Aide </h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Centre d'aide
-                            </a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Conditions
+                            
+                            <a class="text-secondary mb-2" href="conditions.html"><i class="fa fa-angle-right mr-2"></i> Conditions
                                 d'utlisation </a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Politique de
+                            <a class="text-secondary mb-2" href="politiques.html"><i class="fa fa-angle-right mr-2"></i> Politique de
                                 confidentialité </a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Mentions
+                            <a class="text-secondary mb-2" href="mentions.html"><i class="fa fa-angle-right mr-2"></i> Mentions
                                 légales </a>
+
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Centre d'aide
+                                </a>
 
                         </div>
                     </div>
@@ -760,7 +811,7 @@
                                 href="https://www.linkedin.com/in/pool-party-095892333"><i
                                     class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-primary btn-square"
-                                href="https://www.instagram.com/invites/contact/?igsh=t0rgrhbiirw3&utm_content=w1xie6n"><i
+                                href="https://www.instagram.com/pool_partyg4/"><i
                                     class="fab fa-instagram"></i></a>
                         </div>
                     </div>
