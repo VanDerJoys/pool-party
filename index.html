@@ -56,7 +56,7 @@
                             compte </button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button"> Se connecter </button>
-                            <button class="dropdown-item" type="button"> S'inscrire </button>
+                            <a class="dropdown-item" href="account.html"> S'inscrire </a>
                         </div>
                     </div>
 
@@ -146,7 +146,6 @@
     </div>
     <!-- barre supérieure Démarrage fin -->
 
-
     <!-- Navbar debut -->
 
     <div class="container-fluid bg-dark mb-30">
@@ -212,7 +211,6 @@
     <!-- Navbar fin -->
 
     <!-- fin du  Header -->
-
 
     <!-- Carousel Start -->
     <div class="container-fluid mb-3">
@@ -295,7 +293,6 @@
         </div>
     </div>
     <!-- Carousel End -->
-
 
     <!-- Featured Start -->
 
@@ -387,34 +384,31 @@
                     </div>
                 </a>
             </div>
-
-
-
         </div>
     </div>
     <!-- Categories fin -->
 
 
     <!-- Piscine debut  -->
-    <div class="container-fluid pt-5 pb-3">
+    <div class="container-fluid pt-5 pb-3" id="app">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3"> Nos
                 piscines phares </span></h2>
         <div class="row px-xl-5">
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div v-for="pool in pools" :key="pool._id" class="col-lg-3 col-md-4 col-sm-6 pb-1">
                 <div class="product-item bg-light mb-4">
                     <div class="product-img position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
                         <div class="product-action">
                             <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                             <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
                         </div>
                     </div>
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
+                        <a class="h6 text-decoration-none text-truncate" href="detail.html"> {{pool.Amenities}} -
+                            {{pool.Location}}
                         </a>
                         <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5> 10€ / heure / Personne </h5>
+                            <h5> {{pool.Price_per_Hour}}€ / heure / Personne </h5>
                         </div>
                         <div class="d-flex align-items-center justify-content-center mb-1">
                             <small class="fa fa-star text-primary mr-1"></small>
@@ -422,197 +416,7 @@
                             <small class="fa fa-star text-primary mr-1"></small>
                             <small class="fa fa-star text-primary mr-1"></small>
                             <small class="fa fa-star text-primary mr-1"></small>
-                            <small>(13)</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
-                        </a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5>10€ / heure / Personne </h5>
-                            </h6>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center mb-1">
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star-half-alt text-primary mr-1"></small>
-                            <small>(99)</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
-                        </a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5> 10€ / heure / Personne </h5>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center mb-1">
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star-half-alt text-primary mr-1"></small>
-                            <small class="far fa-star text-primary mr-1"></small>
-                            <small>(99)</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
-                        </a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5> 10€ / heure / Personne </h5>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center mb-1">
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="far fa-star text-primary mr-1"></small>
-                            <small class="far fa-star text-primary mr-1"></small>
-                            <small>(99)</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
-                        </a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5> 10€ / heure / Personne </h5>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center mb-1">
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small>(99)</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
-                        </a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5> 10€ / heure / Personne </h5>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center mb-1">
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star-half-alt text-primary mr-1"></small>
-                            <small>(99)</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
-                        </a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5> 10€ / heure / Personne </h5>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center mb-1">
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star-half-alt text-primary mr-1"></small>
-                            <small class="far fa-star text-primary mr-1"></small>
-                            <small>(99)</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="product-item bg-light mb-4">
-                    <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="#"> Piscine exterieure - Paris
-                        </a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5> 10€ / heure / Personne </h5>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center mb-1">
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="fa fa-star text-primary mr-1"></small>
-                            <small class="far fa-star text-primary mr-1"></small>
-                            <small class="far fa-star text-primary mr-1"></small>
-                            <small>(99)</small>
+                            <small>{{pool.Rating}}</small>
                         </div>
                     </div>
                 </div>
@@ -623,7 +427,7 @@
 
 
     <!-- Offer Start -->
-    <div class="container-fluid pt-5 pb-3">
+    <!-- <div class="container-fluid pt-5 pb-3">
         <div class="row px-xl-5">
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 300px;">
@@ -646,12 +450,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Offer End -->
 
 
     <!-- Products Start -->
-    <div class="container-fluid pt-5 pb-3">
+    <!-- <div class="container-fluid pt-5 pb-3">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">
                 Piscines récentes </span></h2>
         <div class="row px-xl-5">
@@ -872,7 +676,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Products End -->
 
 
@@ -890,27 +694,12 @@
                     <div class="bg-light p-4">
                         <img src="img/vendor-3.jpg" alt="">
                     </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-4.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-5.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-6.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-7.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-8.jpg" alt="">
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
     <!-- Vendor End -->
-
 
     <!-- Footer debut -->
 
@@ -1008,6 +797,28 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Lien de connexion pour VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        // Intégration de VueJS pour la récupération des piscines
+        var app = new Vue({
+            el: '#app',
+            data: {
+                pools: []
+            },
+            mounted() {
+                axios.get("http://localhost:3000/pool").then((response) => {
+                    this.pools = response.data.pools;
+                }).catch(err => {
+                    console.log(err);
+                })
+            },
+            methods: {
+
+            }
+        })
+    </script>
 </body>
 
 </html>

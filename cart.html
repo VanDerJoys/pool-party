@@ -46,7 +46,7 @@
                             compte</button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button"> Se connecter </button>
-                            <button class="dropdown-item" type="button"> S'inscrire </button>
+                            <a class="dropdown-item" href="account.html"> S'inscrire </a>
                         </div>
                     </div>
 
@@ -220,24 +220,23 @@
 
 
     <!-- Cart Start -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="app">
         <div class="row px-xl-5">
             <div class="col-lg-8 table-responsive mb-5">
                 <table class="table table-light table-borderless table-hover text-center mb-0">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Products</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th>Remove</th>
+                            <th>Piscine</th>
+                            <th>Prix</th>
+                            <th>Nombre de nageurs</th>
+                            <th>Localisation</th>
                         </tr>
                     </thead>
                     <tbody class="align-middle">
                         <tr>
-                            <td class="align-middle"><img src="img/product-1.jpg" alt="" style="width: 50px;"> Product
-                                Name</td>
-                            <td class="align-middle">$150</td>
+                            <td class="align-middle"><img src="img/product-1.jpg" alt="" style="width: 50px;">
+                                {{pool.Amenities}}</td>
+                            <td class="align-middle">{{pool.Price_per_Hour}} €</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
@@ -255,109 +254,9 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i
-                                        class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-2.jpg" alt="" style="width: 50px;"> Product
-                                Name</td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text"
-                                        class="form-control form-control-sm bg-secondary border-0 text-center"
-                                        value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i
-                                        class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-3.jpg" alt="" style="width: 50px;"> Product
-                                Name</td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text"
-                                        class="form-control form-control-sm bg-secondary border-0 text-center"
-                                        value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i
-                                        class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-4.jpg" alt="" style="width: 50px;"> Product
-                                Name</td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text"
-                                        class="form-control form-control-sm bg-secondary border-0 text-center"
-                                        value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i
-                                        class="fa fa-times"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle"><img src="img/product-5.jpg" alt="" style="width: 50px;"> Product
-                                Name</td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text"
-                                        class="form-control form-control-sm bg-secondary border-0 text-center"
-                                        value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i
-                                        class="fa fa-times"></i></button></td>
+                            <td class="align-middle">{{pool.Location}}</td>
+                            <!-- <td class="align-middle"><button class="btn btn-sm btn-danger"><i
+                                        class="fa fa-times"></i></button></td> -->
                         </tr>
                     </tbody>
                 </table>
@@ -371,10 +270,10 @@
                         </div>
                     </div>
                 </form>
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Cart
-                        Summary</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span
+                        class="bg-secondary pr-3">Résumé</span></h5>
                 <div class="bg-light p-30 mb-5">
-                    <div class="border-bottom pb-2">
+                    <!-- <div class="border-bottom pb-2">
                         <div class="d-flex justify-content-between mb-3">
                             <h6>Subtotal</h6>
                             <h6>$150</h6>
@@ -383,15 +282,14 @@
                             <h6 class="font-weight-medium">Shipping</h6>
                             <h6 class="font-weight-medium">$10</h6>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="pt-2">
                         <div class="d-flex justify-content-between mt-2">
                             <h5>Total</h5>
-                            <h5>$160</h5>
+                            <h5>{{pool.Price_per_Hour}} €</h5>
                         </div>
                         <button class="btn btn-block btn-primary font-weight-bold my-3 py-3"><a href="checkout.html"
-                                class="text-light text-decoration-none">Proceed To
-                                Checkout</a></button>
+                                class="text-light text-decoration-none">Paiement</a></button>
                     </div>
                 </div>
             </div>
@@ -496,6 +394,38 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!',
+                pool: {},
+                // pools: []
+            },
+            mounted() {
+                this.getOnePool();
+                // this.getAllPools();
+            },
+            methods: {
+                getOnePool() {
+                    axios.get("http://localhost:3000/pool/671f63572eb4e575654d9413").then((response) => {
+                        this.pool = response.data.pool;
+                    }).catch(err => {
+                        console.log(err);
+                    })
+                },
+                /* getAllPools() {
+                    axios.get("http://localhost:3000/pool").then((response) => {
+                        this.pools = response.data.pools;
+                    }).catch(err => {
+                        console.log(err);
+                    })
+                } */
+            }
+        })
+    </script>
 </body>
 
 </html>
