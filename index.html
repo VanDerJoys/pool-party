@@ -870,7 +870,7 @@
                 pools: []
             },
             mounted() {
-                axios.get("http://localhost:3000/pool").then((response) => {
+                axios.get("https://pool-party-project-vanderjoys-projects.vercel.app/pool").then((response) => {
                     this.pools = response.data.pools;
                 }).catch(err => {
                     console.log(err);
