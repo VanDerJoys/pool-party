@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title> Pool Party</title>
+    <title> Pool Party </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Pool Party" name="keywords">
     <meta content="Pool Party" name="description">
@@ -20,9 +20,14 @@
     <!-- Favicon -->
     <link href="img/favicon.png" rel="icon">
 
+    
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,23 +39,57 @@
     <!-- Feuille de style Bootstrap personnalisée -->
     <link href="css/style.css" rel="stylesheet">
 
+
     <!-- Google tag (gtag.js) -->
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6NY44REC8"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6NY44REC8"> </script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-W6NY44REC8');
+    gtag('config', 'G-W6NY44REC8');
+    
     </script>
 
-    <!-- Fin Google tag (gtag.js) -->
+    <!-- Fin Google tag (gtag.js) --> 
+
+
+    <!-- Google ADS-->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16775967759"> </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16775967759');
+
+    </script>
+    
+    <!-- Fin Google ADS --> 
 
 </head>
 
-<body>
-    <!-- Header -->
+<body> 
+
+    <!-- Bandeau des cookies -->
+
+<div id="cookie-banner" class="cookie-banner">
+<p> Nous utilisons des cookies pour améliorer votre expérience. Vous acceptez nos conditions d'utilisation. </p>
+
+<div class="container-b">
+    <div class="element-b"> <button id="accept-cookie"> Accepter </button> </div>
+    <div class="element-b"> <button id="reject-cookie"> Refuser </button> </div>
+</div>
+
+    <a href = "/politiques-rgpd"> En savoir plus </a>
+</div>
+
+    <script src="script.js">  </script>
+
+    <!-- Fin du Bandeau des cookies -->
+
+
 
     <!-- barre supérieure Démarrage -->
 
@@ -58,18 +97,18 @@
         <div class="row bg-secondary py-1 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="d-inline-flex align-items-center h-100">
-                    <a class="text-body mr-3" href="">A propos de nous </a>
-                    <a class="text-body mr-3" href="contact.html"> Contact</a>
+                    <a class="text-body mr-3" href="rejoindre.html"> Rejoignez-nous </a>
+                    <a class="text-body mr-3" href="contact.html"> Contact </a>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Mon
-                            compte</button>
+                            compte </button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button"> Se connecter </button>
-                            <a class="dropdown-item" href="account.html"> S'inscrire </a>
+                            <button class="dropdown-item" type="button"> S'inscrire </button>
                         </div>
                     </div>
 
@@ -77,7 +116,7 @@
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown"> FR
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">FR</button>
+                            <button class="dropdown-item" type="button"> FR </button>
                             <button class="dropdown-item" type="button"> EN </button>
                             <button class="dropdown-item" type="button"> ESP </button>
                         </div>
@@ -86,13 +125,13 @@
                 <div class="d-inline-flex align-items-center d-block d-lg-none">
                     <a href="" class="btn px-0 ml-2">
                         <i class="fas fa-heart text-dark"></i>
-                        <span class="badge text-dark border border-dark rounded-circle"
-                            style="padding-bottom: 2px;">0</span>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;"> 0
+                        </span>
                     </a>
                     <a href="" class="btn px-0 ml-2">
                         <i class="fas fa-shopping-cart text-dark"></i>
-                        <span class="badge text-dark border border-dark rounded-circle"
-                            style="padding-bottom: 2px;">0</span>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;"> 0
+                        </span>
                     </a>
                 </div>
             </div>
@@ -110,20 +149,20 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Adresse">
                                 <!-- <div class="input-group-append">
-                                        <span class="input-group-text bg-transparent text-primary">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                    </div> -->
+                                    <span class="input-group-text bg-transparent text-primary">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="input-group">
                                 <input type="date" class="form-control" placeholder="Date">
                                 <!-- <div class="input-group-append">
-                                        <span class="input-group-text bg-transparent text-primary">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                    </div> -->
+                                    <span class="input-group-text bg-transparent text-primary">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div> -->
                             </div>
 
                         </div>
@@ -131,10 +170,10 @@
                             <div class="input-group">
                                 <input type="time" class="form-control" placeholder="Crénau">
                                 <!-- <div class="input-group-append">
-                                        <span class="input-group-text bg-transparent text-primary">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                    </div> -->
+                                    <span class="input-group-text bg-transparent text-primary">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -198,27 +237,21 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link"> Acceuil </a>
-                            <a href="#" class="nav-item nav-link"> Actualités </a>
-                            <a href="blog.html" class="nav-item nav-link active"> Blog </a>
-                            <div class="nav-item dropdown">
+                            <a href="index.html" class="nav-item nav-link active"> Acceuil </a>
+                            <a href="#" class="nav-item nav-link"> A propos de nous </a>
+                            <a href="blog.html" class="nav-item nav-link"> Blog </a>
 
-                                <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                </div>
-                            </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
                             <a href="" class="btn px-0">
                                 <i class="fas fa-heart text-primary"></i>
-                                <span class="badge  border border-secondary rounded-circle"
+                                <span class="badge text-secondary border border-secondary rounded-circle"
                                     style="padding-bottom: 2px;">0</span>
                             </a>
                             <a href="" class="btn px-0 ml-3">
                                 <i class="fas fa-shopping-cart text-primary"></i>
-                                <span class="badge  border border-secondary rounded-circle"
+                                <span class="badge text-secondary border border-secondary rounded-circle"
                                     style="padding-bottom: 2px;">0</span>
                             </a>
                         </div>
@@ -247,50 +280,18 @@
                                     href="">Business</a>
                                 <a class="text-body" href="">Jan 01, 2045</a>
                             </div>
-                            <h1 class="mb-3 text-uppercase font-weight-bold">Lorem ipsum dolor sit amet
-                                elit vitae porta diam...</h1>
-                            <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
-                                magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
-                                amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
-                                sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
-                                aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
-                                sit stet no diam kasd vero.</p>
-                            <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
-                                vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
-                                nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
-                                ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
-                                clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
-                                justo dolore sit invidunt.</p>
-                            <h3 class="text-uppercase font-weight-bold mb-3">Lorem ipsum dolor sit amet elit</h3>
+                            <h1 class="mb-3 text-uppercase font-weight-bold">Plongez dans une expérience exceptionnelle autour d'une piscine.</h1>
+                            <p>Les dernières tendances en matière de piscines et d'aménagements extérieurs.</p>
+                            <h3 class="text-uppercase font-weight-bold mb-3">Créez votre oasis personnelle avec ces idées tendances.</h3>
                             <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/product-1.jpg">
-                            <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
-                                invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
-                                lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
-                                rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
-                                sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
-                                lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                                sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
-                                dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
-                                sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
-                                duo tempor sea kasd clita ipsum et.</p>
-                            <h5 class="text-uppercase font-weight-bold mb-3">Lorem ipsum dolor sit amet elit</h5>
-                            <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/product-2.jpg">
-                            <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
-                                invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
-                                lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
-                                rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
-                                sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
-                                lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                                sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
-                                dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
-                                sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
-                                duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat
-                                aliquyam et ut.</p>
+                            <p>L'aménagement de la piscine et de son environnement est devenu un véritable art de vivre. Chaque année, de nouvelles tendances émergent, alliant esthétisme, fonctionnalité et respect de l'environnement. Découvrez les dernières innovations qui vont transformer votre jardin en havre de paix.</p>
+                            <h5 class="text-uppercase font-weight-bold mb-3">Les incontournables de l'été et leurs dernières évolutions</h5>
+                            <p>Les températures grimpent, les jours rallongent... L'été est synonyme de liberté, de détente et de nouvelles expériences. Mais quelles sont les tendances qui vont marquer cette saison ? Suivez le guide !</p>
                         </div>
                         <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                             <div class="d-flex align-items-center">
                                 <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                <span>John Doe</span>
+                                <span> Francine Marteau </span>
                             </div>
                             <div class="d-flex align-items-center">
                                 <span class="ml-3"><i class="far fa-eye mr-2"></i>12345</span>
@@ -303,45 +304,21 @@
                     <!-- Comment List Start -->
                     <div class="mb-3">
                         <div class="section-title mb-0">
-                            <h4 class="m-0 text-uppercase font-weight-bold">3 Comments</h4>
+                            <h4 class="m-0 text-uppercase font-weight-bold"> 03 Commentaires </h4>
                         </div>
                         <div class="bg-white border border-top-0 p-4">
                             <div class="media mb-4">
-                                <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                                <img src="img/user1.png" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
                                 <div class="media-body">
-                                    <h6><a class=" font-weight-bold" href="">John Doe</a> <small><i>01 Jan
-                                                2045</i></small></h6>
+                                    <h6><a class=" font-weight-bold" href=""> Léo Manfi </a> <small><i> 01 Jan
+                                                2025 </i></small></h6>
                                     <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
                                         accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod
                                         ipsum.</p>
-                                    <button class="btn btn-sm btn-outline-dark">Reply</button>
+                                    <button class="btn btn-sm btn-outline-dark"> Repondre </button>
                                 </div>
                             </div>
-                            <div class="media">
-                                <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                                <div class="media-body">
-                                    <h6><a class=" font-weight-bold" href="">John Doe</a> <small><i>01 Jan
-                                                2045</i></small></h6>
-                                    <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
-                                        accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod
-                                        ipsum.</p>
-                                    <button class="btn btn-sm btn-outline-dark">Reply</button>
-                                    <div class="media mt-4">
-                                        <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1"
-                                            style="width: 45px;">
-                                        <div class="media-body">
-                                            <h6><a class=" font-weight-bold" href="">John Doe</a>
-                                                <small><i>01 Jan 2045</i></small>
-                                            </h6>
-                                            <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor
-                                                labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed
-                                                sed
-                                                eirmod ipsum.</p>
-                                            <button class="btn btn-sm btn-outline-dark">Reply</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                     </div>
                     <!-- Comment List End -->
@@ -349,35 +326,31 @@
                     <!-- Comment Form Start -->
                     <div class="mb-3">
                         <div class="section-title mb-0">
-                            <h4 class="m-0 text-uppercase font-weight-bold">Leave a comment</h4>
+                            <h4 class="m-0 text-uppercase font-weight-bold"> Laissez un commentaire </h4>
                         </div>
                         <div class="bg-white border border-top-0 p-4">
                             <form>
                                 <div class="form-row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="name">Name *</label>
+                                            <label for="name"> Votre nom *</label>
                                             <input type="text" class="form-control" id="name">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="email">Email *</label>
+                                            <label for="email">Votre mail *</label>
                                             <input type="email" class="form-control" id="email">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="website">Website</label>
-                                    <input type="url" class="form-control" id="website">
-                                </div>
-
+                               
                                 <div class="form-group">
                                     <label for="message">Message *</label>
                                     <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group mb-0">
-                                    <input type="submit" value="Leave a comment"
+                                    <input type="submit" value="Laissez votre commentaire"
                                         class="btn btn-primary font-weight-semi-bold py-2 px-3">
                                 </div>
                             </form>
@@ -390,14 +363,14 @@
                     <!-- Social Follow Start -->
                     <div class="mb-3">
                         <div class="section-title mb-0">
-                            <h4 class="m-0 text-uppercase font-weight-bold">Follow Us</h4>
+                            <h4 class="m-0 text-uppercase font-weight-bold">SUIVEZ NOUS</h4>
                         </div>
                         <div class="bg-white border border-top-0 p-3">
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                            <a href="https://www.facebook.com/profile.php?id=61567115590997" class="d-block w-100 text-white text-decoration-none mb-3"
                                 style="background: #39569E;">
                                 <i class="fab fa-facebook-f text-center py-4 mr-3"
                                     style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Fans</span>
+                                <span class="font-weight-medium">Facebook</span>
                             </a>
                             <!-- <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
                                 style="background: #52AAF4;">
@@ -405,18 +378,18 @@
                                     style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
                                 <span class="font-weight-medium">12,345 Followers</span>
                             </a> -->
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                            <a href="https://www.linkedin.com/in/pool-party-095892333/" class="d-block w-100 text-white text-decoration-none mb-3"
                                 style="background: #0185AE;">
                                 <i class="fab fa-linkedin-in text-center py-4 mr-3"
                                     style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Connects</span>
+                                <span class="font-weight-medium">Linkedin</span>
                             </a>
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
-                                style="background: #C8359D;">
-                                <i class="fab fa-instagram text-center py-4 mr-3"
-                                    style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
-                                <span class="font-weight-medium">12,345 Followers</span>
-                            </a>
+                            <a href="https://www.instagram.com/pool_partyg4/" class="d-block w-100 text-white text-decoration-none mb-3"
+                             style="background: #C8359D;">
+                             <i class="fab fa-instagram text-center py-4 mr-3"
+                             style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                             <span class="font-weight-medium">instagram</span>
+                              </a>
                             <!-- <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
                                 style="background: #DC472E;">
                                 <i class="fab fa-youtube text-center py-4 mr-3"
@@ -428,16 +401,7 @@
                     </div>
                     <!-- Social Follow End -->
 
-                    <!-- Ads Start -->
-                    <div class="mb-3">
-                        <div class="section-title mb-0">
-                            <h4 class="m-0 text-uppercase font-weight-bold"> Annonces </h4>
-                        </div>
-                        <div class="bg-white text-center border border-top-0 p-3">
-                            <a href=""><img class="img-fluid" src="img/news-800x500-2.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- Ads End -->
+                    
 
                     <!-- Popular News Start -->
                     <div class="mb-3">
@@ -452,10 +416,9 @@
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
                                             href=""> Picines </a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href=""><small>Jan 01, 2024</small></a>
                                     </div>
-                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
+                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="https://maison-info.fr/accessoires-indispensables-pour-une-piscine-guide-complet-pour-lequipement-parfait/">Les accessoires indispensables pour profiter pleinement de sa location de piscine</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -465,10 +428,9 @@
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
                                             href=""> Picines </a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href=""><small>Fev 08, 2024</small></a>
                                     </div>
-                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
+                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Les tendances de la location de piscine</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -478,10 +440,9 @@
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
                                             href=""> Picines </a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href=""><small>Mars 10, 2024</small></a>
                                     </div>
-                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
+                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Témoignages de propriétaires et de locataires</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -490,11 +451,10 @@
                                     class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                            href="">Picines </a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                            href="">Picines  </a>
+                                        <a class="text-body" href=""><small>Mai 15, 2024</small></a>
                                     </div>
-                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
+                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Les avantages fiscaux pour les propriétaires qui louent leur piscine</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -504,150 +464,104 @@
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
                                             href=""> Picines </a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="text-body" href=""><small>Juin 25, 2024</small></a>
                                     </div>
-                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
+                                    <a class="h6 m-0  text-uppercase font-weight-bold" href="rejoindre.html"> Guide complet pour louer une piscine</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Popular News End -->
 
-                    <!-- Newsletter Start -->
-                    <div class="mb-3">
-                        <div class="section-title mb-0">
-                            <h4 class="m-0 text-uppercase font-weight-bold"> Newsletter </h4>
+                    
+                    
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+
+           <!-- Footer debut -->
+
+    <div class="container-fluid text-secondary mt-5 pt-5" style="background-color: #2D2D7F;">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <h5 class="text-secondary text-uppercase mb-4"> Pool Party </h5>
+                <p class="mb-4"> Louez, profitez, partagez!</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i> 10 rue Augustin Fuguert, 75008
+                    Paris, France </p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i> poolparty@dsp4-cdp-s23-g4.fr </p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i> 07 64 65 98 09 </p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4"> Actualités </h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Actualités
+                            </a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Blog </a>
+
                         </div>
-                        <div class="bg-white text-center border border-top-0 p-3">
-                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
-                            <div class="input-group mb-2" style="width: 100%;">
-                                <input type="text" class="form-control form-control-lg" placeholder="Votre mail">
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4"> Aide </h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            
+                            <a class="text-secondary mb-2" href="conditions.html"><i class="fa fa-angle-right mr-2"></i> Conditions
+                                d'utlisation </a>
+                            <a class="text-secondary mb-2" href="politiques.html"><i class="fa fa-angle-right mr-2"></i> Politique de
+                                confidentialité </a>
+                            <a class="text-secondary mb-2" href="mentions.html"><i class="fa fa-angle-right mr-2"></i> Mentions
+                                légales </a>
+
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Centre d'aide
+                                </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
+                        <p> Inscrivez-vous à notre newsletter et recevez nos dernières actualités, promotions exclusives
+                            et conseils personnalisés. </p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder=" Votre adresse mail">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary font-weight-bold px-3"> S'inscrire </button>
+                                    <button class="btn btn-primary"> S'inscrire </button>
                                 </div>
                             </div>
-                            <small> Lorem ipsum dolor sit amet elit </small>
-                        </div>
-                    </div>
-                    <!-- Newsletter End -->
-
-                    <!-- Tags Start -->
-                    <div class="mb-3">
-                        <div class="mb-3">
-                            <div class="section-title mb-0">
-                                <h4 class="m-0 text-uppercase font-weight-bold"> Tags </h4>
-                            </div>
-                            <div class="bg-white border border-top-0 p-3">
-                                <div class="d-flex flex-wrap m-n1">
-                                    <a href="" class="btn btn-sm btn-outline-dark m-1"> Piscines </a>
-                                    <a href="" class="btn btn-sm btn-outline-dark m-1"> Jacuzzis </a>
-                                    <a href="" class="btn btn-sm btn-outline-dark m-1"> Types de picines </a>
-
-                                </div>
-                            </div>
-                            </form>
-                            <h6 class="text-secondary text-uppercase mt-4 mb-3"> Suivez-Nous </h6>
-                            <div class="d-flex">
-                                <!--  <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
-                                <a class="btn btn-primary btn-square mr-2"
-                                    href="https://www.facebook.com/profile.php?id=61567115590997"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-square mr-2"
-                                    href="https://www.linkedin.com/in/pool-party-095892333"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-square" href="https://www.instagram.com/pool_partyg4/"><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                            <!-- Tags End -->
+                        </form>
+                        <h6 class="text-secondary text-uppercase mt-4 mb-3"> Suivez-Nous </h6>
+                        <div class="d-flex">
+                            <!--  <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                            <a class="btn btn-primary btn-square mr-2"
+                                href="https://www.facebook.com/profile.php?id=61567115590997"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square mr-2"
+                                href="https://www.linkedin.com/in/pool-party-095892333"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square"
+                                href="https://www.instagram.com/pool_partyg4/"><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- News With Sidebar End -->
-
-
-            <!-- Footer debut -->
-
-            <div class="container-fluid text-secondary mt-5 pt-5" style="background-color: #2D2D7F;">
-                <div class="row px-xl-5 pt-5">
-                    <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-                        <h5 class="text-secondary  text-uppercase mb-4"> Pool Party </h5>
-                        <p class="mb-4"> Louez, profitez, partagez!</p>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i> 10 rue Augustin Fuguert,
-                            75008
-                            Paris, France </p>
-                        <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i> poolparty@dsp4-cdp-s23-g4.fr
-                        </p>
-                        <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i> 07 64 65 98 09 </p>
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <div class="row">
-                            <div class="col-md-4 mb-5">
-                                <h5 class="text-secondary  text-uppercase mb-4"> Actualités </h5>
-                                <div class="d-flex flex-column justify-content-start">
-                                    <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Actualités
-                                    </a>
-                                    <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Blog </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-5">
-                                <h5 class="text-secondary  text-uppercase mb-4"> Aide </h5>
-                                <div class="d-flex flex-column justify-content-start">
-                                    <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Centre d'aide
-                                    </a>
-                                    <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Conditions
-                                        d'utlisation </a>
-                                    <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Politique de
-                                        confidentialité </a>
-                                    <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i> Mentions
-                                        légales </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-5">
-                                <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                                <p> Inscrivez-vous à notre newsletter et recevez nos dernières actualités, promotions
-                                    exclusives
-                                    et conseils personnalisés. </p>
-                                <form action="">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder=" Votre adresse mail">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary"> S'inscrire </button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <h6 class="text-secondary text-uppercase mt-4 mb-3"> Suivez-Nous </h6>
-                                <div class="d-flex">
-                                    <!--  <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
-                                    <a class="btn btn-primary btn-square mr-2"
-                                        href="https://www.facebook.com/profile.php?id=61567115590997"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-square mr-2"
-                                        href="https://www.linkedin.com/in/pool-party-095892333"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-primary btn-square"
-                                        href="https://www.instagram.com/invites/contact/?igsh=t0rgrhbiirw3&utm_content=w1xie6n"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-                    <div class="col-md-6 px-xl-0">
-                        <p class="mb-md-0 text-center text-md-left ">
-                            &copy; <a class="text-primary" href="#">G4 Tech</a>. Tous droits réservés.
-                        </p>
-                    </div>
-                    <div class="col-md-6 px-xl-0 text-center text-md-right">
-                        <img class="img-fluid" src="img/payments.png" alt="">
-                    </div>
-                </div>
+        </div>
+        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-secondary">
+                    &copy; <a class="text-primary" href="#"> G4 Tech</a>. Tous droits réservés.
+                </p>
             </div>
-            <!-- Footer Fin -->
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer Fin -->
+
 
 
             <!-- Back to Top -->
