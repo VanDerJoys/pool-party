@@ -12,7 +12,7 @@
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
-  --yellow: #ffc107;
+  --yellow: #f29208;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
@@ -23,7 +23,7 @@
   --secondary: #F5F5F5;
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #ffc107;
+  --warning: #f29208;
   --danger: #dc3545;
   --light: #FFFFFF;
   --dark: #3D464D;
@@ -10995,4 +10995,63 @@ h6 {
   border-color: #2D2D7F;
   cursor: pointer;
   text-align: center;
+}
+
+/* Accéssibilité */
+
+/* ********** ACCESSIBILITE ********** */
+
+#accessibilite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#accessibilite div {
+  margin-left: 25px;
+  background-color: #f1c40f;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor : pointer;
+  color : #333;
+  transition : 1s;
+
+}
+
+#accessibilite div:hover {
+  background-color: #e67e22;
+  transform: scale(1.2);
+}
+
+#accessibilite header{
+ display: none; 
+}
+
+#accessibilite header span {
+  background-color: #34495e;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: #ddd;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+#accessibilite header span:hover {
+  opacity: 0.7;
+}
+
+#accessibilite label {
+  cursor: pointer;
+}
+
+#check {
+  display: none;
 }

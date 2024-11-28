@@ -649,14 +649,14 @@
             },
             methods: {
                 getOnePool() {
-                    axios.get("http://localhost:3000/pool/671f63572eb4e575654d9413").then((response) => {
+                    axios.get("https://pool-party-project.vercel.app/pool/671f63572eb4e575654d9413").then((response) => {
                         this.pool = response.data.pool;
                     }).catch(err => {
                         console.log(err);
                     })
                 },
                 getAllPools() {
-                    axios.get("http://localhost:3000/pool").then((response) => {
+                    axios.get("https://pool-party-project.vercel.app/pool").then((response) => {
                         this.pools = response.data.pools;
                     }).catch(err => {
                         console.log(err);

@@ -57,8 +57,8 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="img/favicon.png" alt="Logo"></a>
-                    <a class="navbar-brand hidden" href="./"><img src="img/favicon.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="./"><img src="img/favicon.png" alt="Logo" width="60"></a>
+                    <!-- <a class="navbar-brand hidden" href="./"><img src="img/favicon.png" alt="Logo"></a> -->
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>
             </div>
@@ -144,7 +144,7 @@
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                            <img class="user-avatar rounded-circle" src="img/product-1.jpg" alt="User Avatar">
                         </a>
 
                         <div class="user-menu dropdown-menu">
@@ -173,17 +173,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <div class="page-header float-right">
-                            <div class="page-title">
-                                <ol class="breadcrumb text-right">
-                                    <li><a href="#">Dashboard</a></li>
-                                    <li><a href="#">Table</a></li>
-                                    <li class="active">Data table</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -191,8 +180,10 @@
         <div class="content">
             <div class="animated fadeIn">
                 <div class="row">
-
                     <div class="col-md-12">
+                        <div class="alert alert-danger" role="alert">
+                            Ce prestataire a été rejeté !
+                        </div>
                         <div class="card">
                             <div class="card-header">
                                 <strong class="card-title">Liste des prestataires</strong>
@@ -205,6 +196,8 @@
                                             <th>Email</th>
                                             <th>Téléphone</th>
                                             <th>Document</th>
+                                            <th>Image</th>
+                                            <th>Validation</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -213,24 +206,42 @@
                                             <td>boby@gmail.com</td>
                                             <td>0617878328</td>
                                             <td>Ouvrir ici</td>
+                                            <td><img src="img/product-2.jpg" width="70"></td>
+                                            <td><button type="button" class="btn btn-success"><i
+                                                        class="fa fa-check"></i></button> <button type="button"
+                                                    class="btn btn-danger"><i class="fa fa-close"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Samuel</td>
                                             <td>sam@gmail.com</td>
                                             <td>0619283743</td>
                                             <td>Ouvrir ici</td>
+                                            <td><img src="img/product-3.jpg" width="70"></td>
+                                            <td><button type="button" class="btn btn-success"><i
+                                                        class="fa fa-check"></i></button> <button type="button"
+                                                    class="btn btn-danger"><i class="fa fa-close"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Lili</td>
                                             <td>liliboss@gmail.com</td>
                                             <td>0723485754</td>
                                             <td>Ouvrir ici</td>
+                                            <td><img src="img/product-4.jpg" width="70"></td>
+                                            <td><button type="button" class="btn btn-success"><i
+                                                        class="fa fa-check"></i></button> <button type="button"
+                                                    class="btn btn-danger"><i class="fa fa-close"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>Cedric Kelly</td>
                                             <td>cedkel@gmail.com</td>
                                             <td>0618278732</td>
                                             <td>Ouvrir ici</td>
+                                            <td><img src="img/product-6.jpg" width="70"></td>
+                                            <td><button type="button" class="btn btn-success" data-toggle="modal"
+                                                    data-target="#staticModal"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn btn-danger"><i
+                                                        class="fa fa-close"></i></button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -258,7 +269,28 @@
                 </div>
             </div>
         </footer> -->
-
+        <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticModalLabel">Confirmation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Veuillez confirmer votre action
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Confirmer</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div><!-- /#right-panel -->
 
     <!-- Right Panel -->

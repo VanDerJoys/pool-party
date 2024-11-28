@@ -57,8 +57,16 @@
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Mon
                             compte</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button"> Se connecter </button>
-                            <a class="dropdown-item" href="account.html"> S'inscrire </a>
+                            <a class="dropdown-item" href="contact.html"> Se connecter </a>
+                            <button class="dropdown-item dropdown-toggle" type="button" data-toggle="dropdown">
+                                S'inscrire </button>
+                            <div class="dropdown-menu dropdown-menu-left">
+                                <!-- <button class="dropdown-item" type="button"> Propriétaire </button> -->
+                                <a class="dropdown-item" href="account.html">
+                                    Propriétaire </a>
+                                <a class="dropdown-item" href="locataire.html">
+                                    Locataire </a>
+                            </div>
                         </div>
                     </div>
 
@@ -225,7 +233,6 @@
                     <div id="success"></div>
                     <form name="sentMessage" id="contactForm" novalidate="novalidate" action="?">
                         <div class="row">
-
                             <div class="col-md-6 control-group">
                                 <input type="text" class="form-control" id="name" placeholder="Votre nom"
                                     required="required" data-validation-required-message="Veuillez entrer votre nom" />
@@ -239,18 +246,48 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 control-group">
+                            <div class="col-md-4 control-group">
                                 <input type="tel" class="form-control" id="phone"
                                     placeholder="Votre numéro de téléphone" required="required"
                                     data-validation-required-message="Veuillez entrer votre numéro de téléphone" />
                                 <p class="help-block text-danger"></p>
                             </div>
-                            <div class="col-md-6 control-group">
+                            <div class="col-md-4 control-group">
                                 <input type="text" class="form-control" id="city" placeholder="Votre adresse"
                                     required="required"
                                     data-validation-required-message="Veuillez entrer votre adresse" />
                                 <p class="help-block text-danger"></p>
                             </div>
+                            <div class="col-md-4 control-group">
+                                <input type="password" class="form-control" id="password" placeholder="Mot de passe"
+                                    required="required"
+                                    data-validation-required-message="Veuillez entrer votre adresse" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 control-group">
+                                <input type="number" class="form-control" id="price" placeholder="Prix de votre piscine"
+                                    required="required"
+                                    data-validation-required-message="Veuillez entrer le prix de votre piscine" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="col-md-4 control-group">
+                                Date disponible
+                                <input type="date" class="form-control" id="date" required="required"
+                                    data-validation-required-message="Veuillez entrer votre adresse" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="col-md-4 control-group">
+                                Heure disponible
+                                <input type="time" class="form-control" id="time" required="required"
+                                    data-validation-required-message="Veuillez entrer l'heure disponible" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Description de la piscine</label>
+                            <textarea id="message" cols="30" rows="3" class="form-control"></textarea>
                         </div>
                         <div class="control-group">
                             Entrer un document et l'image de la piscine
