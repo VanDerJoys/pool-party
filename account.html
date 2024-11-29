@@ -199,7 +199,7 @@
                             <a href="#" class="nav-item nav-link"> Actualités </a>
                             <a href="blog.html" class="nav-item nav-link"> Blog </a>
 
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="info.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
                             <a href="" class="btn px-0">
@@ -408,6 +408,32 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Lien de connexion pour VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        // Intégration de VueJS pour la récupération des piscines
+        var app = new Vue({
+            el: '#app',
+            data: {
+                pool: {
+                    name: "",
+                    email: "",
+                    phone: "",
+                }
+            },
+            mounted() {
+                axios.post("https://pool-party-project-vanderjoys-projects.vercel.app/pool").then((response) => {
+                    this.pool = response.data.pools;
+                }).catch(err => {
+                    console.log(err);
+                })
+            },
+            methods: {
+
+            }
+        })
+    </script>
 </body>
 
 </html>
